@@ -268,7 +268,34 @@
             padding-bottom: 10px;
             border-bottom: 2px solid #333;
         }
+        .news-heading-row {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            gap: 12px;
+            margin-top: 28px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #333;
+        }
+        .news-heading-row .news-year {
+            margin: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        .news-more-link {
+            font-size: 14px;
+            font-weight: 600;
+            color: #333;
+            text-decoration: none;
+            white-space: nowrap;
+            line-height: 1.2;
+        }
+        .news-more-link:hover {
+            color: #000;
+            text-decoration: underline;
+        }
         h2.page-title + .news-year { margin-top: 12px; }
+        h2.page-title + .news-heading-row { margin-top: 12px; }
         p[style*="text-align:center"] + .news-year { margin-top: 16px; }
         .news-event-card {
             border: 1px solid #b8b8b8;
@@ -388,7 +415,10 @@
                     <div class="profile-intro-block">
                         <p class="profile-intro">我是一名<!--拥有<strong>20年行业经验</strong>-->的资深<strong>人工智能研究与落地领导者</strong>，深耕人工智能、机器学习、多媒体信息处理及大语言模型（LLM）领域的创新落地，累计授权发明专利超百项，4 项专利获联想「最有价值专利（MVP）」，目前在联想人工智能技术中心带领中美团队，推动 AI 技术在全球企业场景中实现高价值落地。</p>
                     </div>
-                    <h3 class="news-year">最新动态</h3>
+                    <div class="news-heading-row">
+                        <h3 class="news-year">最新动态</h3>
+                        <a href="#news" class="news-more-link">全部&gt;</a>
+                    </div>
                     <div class="news-event-card">
                         <p class="news-date">2026年4月7日</p>
                         <p class="news-content">在西安交通大学建校130周年系列活动举办的第五届产教融合论坛上，与郑庆华教授团队在智慧教育的合作成果作为西交大六大优秀标志性成果之一发布。</p>
@@ -499,7 +529,10 @@
                     <div class="profile-intro-block">
                         <p class="profile-intro">I am a highly accomplished <strong>AI Engineering leader</strong>  <!-- with <strong>20 years</strong> of experience--> in driving innovation across HCI, Multimedia Information Processing, and Large Language Models (LLM). I lead the enterprise AI at Lenovo AI Technology Center and work with my team to transform cutting-edge research into high-value products.</p>
                     </div>
-                    <h3 class="news-year">Latest News</h3>
+                    <div class="news-heading-row">
+                        <h3 class="news-year">Latest News</h3>
+                        <a href="#news" class="news-more-link">All &gt;</a>
+                    </div>
                     <div class="news-event-card">
                         <p class="news-date">Apr 7, 2026</p>
                         <p class="news-content">At the 5th Industry-Education Integration Forum held as part of Xi'an Jiaotong University's 130th anniversary series, our smart education collaboration achievement with Professor Zheng Qinghua's team was released as one of XJTU's six exemplary landmark achievements.</p>
