@@ -137,8 +137,9 @@
         .profile-contact { font-size: 14px; color: #333; margin-bottom: 6px; }
         .profile-contact:last-of-type { margin-bottom: 0; }
         .profile-intro-block { margin-bottom: 24px; }
-        .profile-intro-block .profile-intro { margin-bottom: 12px; text-align: justify; }
+        .profile-intro-block .profile-intro { margin-bottom: 12px; text-align: left; max-width: 760px; }
         .profile-intro-block .profile-intro:last-child { margin-bottom: 0; }
+        .profile-intro-block strong { color: #111; }
         .profile-expertise-title { font-size: 17px; font-weight: 600; margin: 20px 0 10px; color: #000; }
         .profile-intro-block .list-plain { margin-top: 6px; margin-bottom: 0; }
 
@@ -429,7 +430,8 @@
                         </div>
                     </div>
                     <div class="profile-intro-block">
-                        <p class="profile-intro">我是一名拥有<strong>20年行业经验</strong>的资深<strong>人工智能研究与落地领导者</strong>，累计授权发明专利超百项，目前在联想集团全球人工智能技术中心领导企业级人工智能，带领中美团队推动 AI 技术在全球企业场景中实现高价值落地。</p>
+                        <p class="profile-intro">我是一名拥有<strong>20年行业经验</strong>的人工智能技术领导者，专注于<strong>企业级 AI、机器学习与多媒体信息处理</strong>的研究、工程化和规模化落地。目前，我在联想集团全球人工智能技术中心负责企业级 AI，带领中美团队将大模型、多智能体与文档智能等技术转化为可持续的产品与业务价值。</p>
+                        <p class="profile-intro">截至目前，我已参与推动<strong>140余项发明专利</strong>申请与授权，相关技术已应用于 AI PC、混合云、智慧教育等场景，致力于连接前沿研究、工程实践与产业影响力。</p>
                     </div>
                     <h3 class="news-year">任职与学会</h3>
                     <div class="news-event-card">
@@ -548,7 +550,8 @@
                         </div>
                     </div>
                     <div class="profile-intro-block">
-                        <p class="profile-intro">I am a highly accomplished <strong>AI Engineering leader</strong>  <!-- with <strong>20 years</strong> of experience--> in driving innovation across HCI, Multimedia Information Processing, and Large Language Models (LLM). I lead the enterprise AI at Lenovo AI Technology Center and work with my team to transform cutting-edge research into high-value products.</p>
+                        <p class="profile-intro">I lead enterprise AI at Lenovo AI Technology Center, specializing in the research, engineering, and scalable deployment of AI technologies. My work focuses on connecting advanced research, engineering practices, and industry impact.</p>
+                        <p class="profile-intro">As a senior AI engineering leader, I have contributed to over <strong>140 patent applications and grants</strong>, with technologies deployed across AI PCs, hybrid clouds, smart education, and other product lines. My expertise spans large language models, multimodal AI, digital humans, and enterprise knowledge systems.</p>
                     </div>
                     <h3 class="news-year">Positions &amp; Societies</h3>
                     <div class="news-event-card">
@@ -1111,8 +1114,8 @@
             var navItems = document.querySelectorAll('.nav-item[data-zh][data-en]');
             var sections = document.querySelectorAll('.page-section');
             var zhTitles = {
-                'zh': '武亚强 (Adam Wu) - 联想人工智能技术中心 高级总监',
-                'en': 'Adam Wu (武亚强) - Executive Director, Lenovo AI Technology Center'
+                'zh': '武亚强 (Adam Wu) | 联想集团 AI 技术中心 高级总监',
+                'en': 'Adam Wu (武亚强) | Executive Director, Lenovo AI Technology Center'
             };
             var pageToSection = {
                 'basic': 'section-basic',
